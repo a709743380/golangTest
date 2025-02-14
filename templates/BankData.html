@@ -1,0 +1,21 @@
+{{define "content"}}
+<h2>銀行表格</h2>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>銀行代碼</th>
+      <th>銀行名稱</th>
+      <th>簡稱</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{range .Model}}
+    <tr>
+      <td>{{.BankCode}}</td>
+      <td>{{.BankName}}</td>
+      <td>{{.ShortName}}</td>
+    </tr>
+    {{end}}
+  </tbody>
+</table>
+{{end}}
